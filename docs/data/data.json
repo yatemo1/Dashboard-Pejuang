@@ -1,6 +1,5 @@
 {
-  "generated_at": "2026-08-14T08:29:12.222654+00:00",
-  "sumber": "snapshot manual 2026-08-14 (akan digantikan otomatis oleh GitHub Actions setelah service account terhubung)",
+  "generated_at": "2026-08-14T09:36:20.207084+00:00",
   "ringkasan": {
     "total_anak": 27,
     "total_aktif": 22,
@@ -9,7 +8,7 @@
     "total_yatim_piatu": 2,
     "total_wilayah": 2,
     "total_prestasi": 1,
-    "total_bantuan": 11765.0
+    "total_bantuan": 11665.0
   },
   "anak_asuh": [
     {
@@ -419,9 +418,9 @@
     }
   ],
   "biaya": {
-    "total_tersalurkan": 11765.0,
+    "total_tersalurkan": 11665.0,
     "per_kategori": {
-      "Uang Saku / Konsumsi": 6500.0,
+      "Uang Saku / Konsumsi": 6400.0,
       "Seragam & Perlengkapan": 4219.0,
       "Buku & Alat Tulis": 746.0,
       "Lainnya": 300.0
@@ -429,7 +428,7 @@
     "per_bulan": {
       "2026-03": 700.0,
       "2026-04": 3300.0,
-      "2026-06": 1500.0,
+      "2026-06": 1400.0,
       "2026-07": 6265.0
     },
     "per_anak_total": {
@@ -447,9 +446,9 @@
       "237437c6": 907.0,
       "9e73ef5b": 508.0,
       "cdd3664c": 508.0,
-      "0abc81b6": 268.0
+      "0abc81b6": 168.0
     },
-    "jumlah_transaksi": 59
+    "jumlah_transaksi": 58
   },
   "prestasi": [
     {
@@ -462,29 +461,29 @@
   ],
   "berita": [
     {
-      "isi": "Pulang haji ba'da dhuhur di rumahe mak-e lagi. Alhamdulillah kembali berkumpul dengan anak-anak untuk saling menguatkan dan berbagi semangat.",
+      "isi": "Pulang haji ba'da dhuhur di rumahe mak-e lagi. tgl. 16 jun 26 landing Jkt dan istirahat di kowis baru tgl. 20 ke ngimbang ketemu anak2 lagi. Kali ini dibersamai bu hajjah Titik sambil mesem.\nDaftarnya pak Eko yang buat, matur suwun pak Eko.  \nBerdiri kiri-kanan:\nIrfan-Andre-Bryan-Zio-Gery-Rayhan\n\nDuduk kiri ke kanan:\nDinar-Raya-Diah-Aul-Septi-Putri-Jihan-Zia",
       "tanggal": "2026-06-20",
-      "gambar": "assets/img/berita/berita-1.jpg"
+      "gambar": "assets/img/berita/1Ij40czmK7mhl9GOLbMqwJ_axjnNukudc.jpg"
     },
     {
-      "isi": "Pamitan, mohon doa restu anak-anak untuk rencana safar.",
+      "isi": "Pamitan mohon doa restu anak2 rencana safar 15 mei 2026",
       "tanggal": "2026-04-25",
-      "gambar": "assets/img/berita/berita-2.jpg"
+      "gambar": "assets/img/berita/1i2WOCxd482ns7G8U4a6P-UrJobbQwP6p.jpg"
     },
     {
-      "isi": "Kebersamaan menjelang keberangkatan.",
+      "isi": "sama",
       "tanggal": "2026-04-25",
-      "gambar": "assets/img/berita/berita-3.jpg"
+      "gambar": "assets/img/berita/118kkkKDdRUlvnji8GfTp9dDLlsEmhIHj.jpg"
     },
     {
-      "isi": "Alhamdulillah dapat terus membersamai perkembangan anak-anak.",
+      "isi": "Alhamdulillah membersamai anak2",
       "tanggal": "2026-04-25",
-      "gambar": "assets/img/berita/berita-5.jpg"
+      "gambar": "assets/img/berita/12tm3ndcKYYJ2D4k7ofaTq0V-qN2YeCJQ.jpg"
     },
     {
-      "isi": "Lebaran bersama, kumpul pagi hari setelah subuh — momen kekeluargaan bersama anak-anak asuh.",
+      "isi": "LEBARAN, Pagi hari, ngumpul habis subuhan. pertama ketemu dan kenalan. Pak Eko dan nyonyae gak ketok...:)",
       "tanggal": "2026-03-22",
-      "gambar": "assets/img/berita/berita-4.jpg"
+      "gambar": "assets/img/berita/1UOSeFE-szzRfKUqmCVRlVyLpTp5R9X9F.jpg"
     }
   ]
 }
