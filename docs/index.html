@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard Pejuang — Sahabat Anak Yatim &amp; Piatu</title>
+<meta name="description" content="Dashboard komprehensif program pendampingan anak yatim &amp; piatu Pejuang: statistik, bantuan tersalurkan, prestasi, dan dokumentasi kegiatan." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="brand"><span class="brand-badge">🌱</span> Dashboard Pejuang</div>
+    <div class="nav-links">
+      <a href="#ringkasan">Ringkasan</a>
+      <a href="#statistik">Statistik</a>
+      <a href="#anak-asuh">Anak Asuh</a>
+      <a href="#prestasi">Prestasi</a>
+      <a href="#kegiatan">Kegiatan</a>
+    </div>
+    <div class="updated-pill">Update terakhir: <span id="last-updated">memuat…</span></div>
+  </div>
+</nav>
+
+<header class="hero" id="ringkasan">
+  <div class="container">
+    <div>
+      <h1>Merawat Harapan, <span>Mendampingi</span> Para Pejuang Kecil</h1>
+      <p>Dashboard ini merangkum perjalanan pendampingan anak-anak yatim &amp; piatu binaan Pejuang — mulai dari data pendidikan, bantuan yang tersalurkan, hingga prestasi dan dokumentasi kegiatan. Disusun otomatis dari data terbaru, dengan identitas anak-anak yang tetap dijaga privasinya.</p>
+      <div class="hero-badges">
+        <div class="hero-badge">🔒 Data disamarkan demi privasi anak</div>
+        <div class="hero-badge">⚙️ Update otomatis via Python + GitHub Actions</div>
+      </div>
+    </div>
+    <img class="hero-illustration" src="assets/img/hero-illustration.svg" alt="Ilustrasi anak-anak belajar bersama" />
+  </div>
+</header>
+
+<div class="container">
+  <div class="kpi-grid" id="kpi-grid"></div>
+</div>
+
+<section class="block" id="statistik">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Statistik</div>
+      <h2>Sebaran &amp; Profil Anak Asuh</h2>
+      <p>Gambaran umum jenjang pendidikan, gender, status, dan wilayah dampingan.</p>
+    </div>
+    <div class="charts-grid">
+      <div class="chart-card"><h3>Jenjang Pendidikan</h3><div id="chart-jenjang"></div></div>
+      <div class="chart-card"><h3>Proporsi Gender</h3><div id="chart-gender"></div></div>
+      <div class="chart-card"><h3>Status Yatim / Piatu</h3><div id="chart-status"></div></div>
+      <div class="chart-card"><h3>Wilayah Dampingan</h3><div id="chart-wilayah"></div></div>
+      <div class="chart-card"><h3>Bantuan per Kategori</h3><div id="chart-biaya-kategori"></div></div>
+      <div class="chart-card"><h3>Tren Bantuan Bulanan</h3><div id="chart-biaya-bulan"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="anak-asuh">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Anak Asuh</div>
+      <h2>Daftar Pejuang Kecil (<span id="anak-count">0</span> anak)</h2>
+      <p>Nama ditampilkan sebagai nama depan saja, dan avatar berupa ilustrasi — bukan foto asli — untuk menjaga privasi anak sesuai kebijakan program.</p>
+    </div>
+    <div class="filters">
+      <select id="filter-wilayah"><option value="all">Semua Wilayah</option></select>
+      <select id="filter-jenjang"><option value="all">Semua Jenjang</option></select>
+      <select id="filter-status">
+        <option value="all">Semua Status</option>
+        <option value="Yatim">Yatim</option>
+        <option value="Piatu">Piatu</option>
+        <option value="Yatim Piatu">Yatim Piatu</option>
+      </select>
+    </div>
+    <div class="anak-grid" id="anak-grid"></div>
+  </div>
+</section>
+
+<section class="block" id="prestasi">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Prestasi</div>
+      <h2>Jejak Prestasi Para Pejuang</h2>
+      <p>Pencapaian anak-anak binaan di berbagai tingkat kompetisi &amp; kegiatan.</p>
+    </div>
+    <div class="prestasi-list" id="prestasi-list"></div>
+  </div>
+</section>
+
+<section class="block" id="kegiatan">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Dokumentasi</div>
+      <h2>Galeri Kegiatan</h2>
+      <p>Momen kebersamaan &amp; kegiatan pendampingan (foto dokumentasi kegiatan, bukan foto identitas individu anak).</p>
+    </div>
+    <div class="berita-grid" id="berita-grid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <div class="brand">🌱 Dashboard Pejuang</div>
+      <p class="privacy-note">Data anak asuh pada dashboard ini telah disamarkan (nama depan saja, tanpa alamat/no. HP/foto profil/tanggal lahir lengkap) untuk melindungi privasi &amp; keamanan anak. Nilai bantuan ditampilkan dalam satuan pencatatan asli sheet. Sumber: Google Sheet "Database Pejuangku", diproses otomatis dengan Python.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

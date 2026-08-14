@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE8C7"/>
+      <stop offset="1" stop-color="#FFF6E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="24" fill="url(#sky)"/>
+  <circle cx="500" cy="80" r="45" fill="#FFD37A"/>
+  <path d="M0 320 Q150 270 300 320 T600 320 V400 H0 Z" fill="#BFE3C2"/>
+  <path d="M0 350 Q150 310 300 350 T600 350 V400 H0 Z" fill="#8FCB94"/>
+  <!-- book / school icon -->
+  <g transform="translate(230,190)">
+    <rect x="0" y="30" width="70" height="60" rx="6" fill="#5B8DD9"/>
+    <rect x="70" y="30" width="70" height="60" rx="6" fill="#F4A6C6"/>
+    <rect x="66" y="26" width="8" height="68" fill="#FFF6E9"/>
+    <circle cx="70" cy="14" r="14" fill="#FFD37A"/>
+  </g>
+  <!-- three children figures (silhouette, non-identifying) -->
+  <g transform="translate(90,230)">
+    <circle cx="20" cy="10" r="16" fill="#FFD9B3"/>
+    <rect x="4" y="26" width="32" height="46" rx="10" fill="#5B8DD9"/>
+  </g>
+  <g transform="translate(440,220)">
+    <circle cx="20" cy="10" r="18" fill="#FFD9B3"/>
+    <rect x="2" y="28" width="36" height="52" rx="10" fill="#F4A6C6"/>
+  </g>
+  <g transform="translate(300,260)">
+    <circle cx="16" cy="8" r="14" fill="#FFD9B3"/>
+    <rect x="2" y="22" width="28" height="40" rx="9" fill="#9BD0A8"/>
+  </g>
+  <g stroke="#FFD37A" stroke-width="4" stroke-linecap="round">
+    <path d="M500 30 v-16"/>
+    <path d="M500 130 v16"/>
+    <path d="M450 80 h-16"/>
+    <path d="M550 80 h16"/>
+  </g>
+</svg>
