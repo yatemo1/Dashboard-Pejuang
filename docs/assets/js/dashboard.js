@@ -28,14 +28,14 @@ function renderKPI(d) {
   const r = d.ringkasan;
   const el = document.getElementById("kpi-grid");
   const items = [
-    { label: "Total Anak Asuh", value: r.total_anak, cls: "green" },
+    { label: "Total Anak Asuh", value: r.total_anak, cls: "navy" },
     { label: "Aktif Terdampingi", value: r.total_aktif, cls: "" },
     { label: "Status Yatim", value: r.total_yatim, cls: "pink" },
     { label: "Status Piatu", value: r.total_piatu, cls: "pink" },
-    { label: "Yatim Piatu", value: r.total_yatim_piatu, cls: "gold" },
+    { label: "Yatim Piatu", value: r.total_yatim_piatu, cls: "green" },
     { label: "Wilayah Dampingan", value: r.total_wilayah, cls: "" },
-    { label: "Prestasi Tercatat", value: r.total_prestasi, cls: "gold" },
-    { label: "Total Bantuan Tersalurkan", value: "Rp " + fmtNumber(r.total_bantuan) + "rb", cls: "green" },
+    { label: "Prestasi Tercatat", value: r.total_prestasi, cls: "green" },
+    { label: "Total Bantuan Tersalurkan", value: "Rp " + fmtNumber(r.total_bantuan) + "rb", cls: "gold" },
   ];
   el.innerHTML = items
     .map(
@@ -185,3 +185,4 @@ async function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
